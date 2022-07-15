@@ -1,0 +1,11 @@
+{% extends "AppEntrega/inicio.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+<a class="btn btn-primary" href="{% url 'clienteFormulario' %}"> Registrar Cliente</a>
+<a class="btn btn-primary" href="{% url 'busquedaClientes' %}"> Buscar Cliente</a>
+
+{% endblock %}

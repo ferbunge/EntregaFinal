@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1> RESULTADOS DE LA BUSQUEDA </h1>
+
+{% if resultado %}
+
+<ul>
+{% for nombres in resultado %}
+
+    <li> {{nombres.nom }} </li>
+    <li> {{nombres.nom }} </li>
+    <li> {{nombres.mail }}</li>
+{% endfor %}
+</ul>
+
+{% else %}
+
+<p> No existe ese nombre registrado, proba con id.</p>
+
+{% endif %}
+</body>
+</html>
+
